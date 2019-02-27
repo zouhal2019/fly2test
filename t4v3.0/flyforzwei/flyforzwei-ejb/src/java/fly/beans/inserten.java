@@ -33,16 +33,12 @@ public class inserten implements insertenLocal {
     @Override
     public void insertLand(allDTODTO all) {
 
-//        String path = "C:\\new\\" + dateiname;
-//        File file = new File(path);
+
         Connection connect = null;
         Statement s = null;
 
         
-//            BufferedReader br = new BufferedReader(new FileReader(file));
-//            String line;
-//            br.readLine();
-//            br.readLine();
+
 
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -54,9 +50,7 @@ public class inserten implements insertenLocal {
                 s = connect.createStatement();
 
             
-//            while ((line = br.readLine()) != null) {
-                
-//                    String[] arr = line.split(";");
+
 
                     if (!p.prufPassLand(all)) {
                         String sql = "INSERT INTO Land "
@@ -90,12 +84,8 @@ public class inserten implements insertenLocal {
             {
                     e.getLocalizedMessage();
                 }
-//            }
-//            System.out.println("Ende");
-//            br.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
+
     }
 
     @Override
@@ -603,7 +593,7 @@ public class inserten implements insertenLocal {
         } 
       
         
-//            br.close();
+//          br.close();
    
            
     }
