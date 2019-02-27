@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fly² Login</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body 
+            {
+                background-color:#cccccc  
+            }
+            form { 
+                margin: 0 auto; 
+                width:250px;
+                display:block;
+            }
+            .aligncenter {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="aligncenter">
+            <img src="logo.png" alt="fly²" class="center"></p>
+        <form action="LoginController" method="post">
+            <fieldset>
+                <legend>Login:</legend>
+                Benutzer :<input type="text" name="username"> <br>
+                Passwort :<input type="password" name="password"><br>
+                <input type="submit" value="Login">
+            </fieldset>
+        </form>
+    </body>
+</html>

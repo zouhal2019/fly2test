@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <title>fly² Datenbank</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body 
+            {
+                background-color:#cccccc  
+            }
+            form { 
+                margin: 0 auto; 
+                width:250px;
+                display:block;
+            }
+            .aligncenter {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="aligncenter">
+            <img src="logo.png" alt="fly²"></p>
+        <div align="center"><h3>Welche Datei möchten Sie in die Datenbank übertragen?</h3></div>
+        <form action="go" enctype="multipart/form-data" method="POST">
+            <fieldset>
+                <legend>Datei:</legend>
+                <input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" name="fname"/><br/>
+                <input type="submit" value="OK">
+            </fieldset>
+        </form>
+    </body>
+</html>
